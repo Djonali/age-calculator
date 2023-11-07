@@ -10,28 +10,28 @@
 
 <body>
     <main>
-        <div class="form-container">
+        <form class="form-container">
             <div class="form-item">
                 <label  id="lbday" for="days">DAY</label>
-                <input type="text" id="days" class="form-container-input" placeholder="DD" oninput="onInputChange(days.value, event)">
+                <input type="text"  id="days" class="form-container-input" placeholder="DD" onkeypress="onInputChange(event)">
                 <div id="errorDayId" class="error-msg" hidden>Must be valid</div>
             </div>
             <div class="form-item">
                 <label  id="lbmonth" for="month">MONTH</label>
-                <input type="text" id="month" class="form-container-input"  placeholder="MM">
+                <input type="text" id="month" class="form-container-input"  placeholder="MM" onkeypress="onInputChange(event)">
                 <div id="errorMonthId" class="error-msg" hidden></div>
             </div>
             <div class="form-item">
                 <label  id="lbyear" for="year">YEAR</label>
-                <input type="text" id="year" class="form-container-input"  placeholder="YYYY">
+                <input type="text" id="year" class="form-container-input"  placeholder="YYYY" onkeypress="onInputChange(event)">
                 <div id="errorYearId" class="error-msg" hidden></div>
-            </div>
-        </div>
+            </div>          
+        </form> 
         <div class="divider">
             <span class="hr-line">
                 <img src="assets/images/icon-arrow.svg" class="down-arrow" alt="Down Arrow icon" onclick="onSubmitClick()">
             </span>           
-        </div>
+        </div>      
         <div class="results">
             <div><span id="yearText">--</span><span  class="results-text">years</span><br>
             <span id="monthText">--</span> <span  class="results-text">months</span> <br>

@@ -180,6 +180,7 @@ main {
     height: 50px;
     padding: 12px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .divider img{
